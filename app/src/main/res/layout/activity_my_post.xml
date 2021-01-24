@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#4998"
+    tools:context=".MyPost">
+
+           <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MY POST"
+                android:gravity="center"
+               android:textColor="@color/black"
+                android:textSize="59sp"
+                android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="0dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="quit"
+        android:src="@drawable/ic_baseline_navigate_before_24"
+        android:textColor="#64a4e2" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="5dp"
+        >
+<LinearLayout
+    android:layout_width="300dp"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_account_circle_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı"
+            android:layout_marginLeft="5dp"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="right"
+            android:onClick="editMyPost"
+            android:text="EDIT"
+            android:textColor="#64A4E2"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:minHeight="250dp"
+        android:minWidth="300dp"
+        android:layout_marginTop="10dp"
+        android:background="#4998"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_image_24"
+        android:layout_gravity="center"
+        />
+    <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_account_circle_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    android:text="Name"/>
+
+                <ImageView
+                android:layout_marginLeft="3dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_account_circle_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    android:text="Name"/>
+                <ImageView
+                android:layout_marginLeft="3dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_account_circle_24"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    android:text="Name"/>
+                <TextView
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="7sp"
+                    android:layout_gravity="center"
+                    android:text="126 more public"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Comments"
+    android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Comment"
+        android:textSize="5sp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="Add Comment"
+            android:textSize="5sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

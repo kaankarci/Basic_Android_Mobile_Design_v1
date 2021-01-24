@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4998"
+    tools:context=".EditPost">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/header_edit_post"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT\nPOST"
+        android:gravity="center"
+        android:textSize="59sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="0dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_baseline_navigate_before_24"
+        android:textColor="#64a4e2" />
+</RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/header_edit_post"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_baseline_image_24"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Input Text"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:hint="Description"
+                android:layout_gravity="center"
+                android:layout_height="90dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="150dp"
+                    android:backgroundTint="#64A4E2"
+                    android:text="DELETE"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_width="150dp"
+                    android:text="SAVE"
+                    android:backgroundTint="#64A4E2"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
